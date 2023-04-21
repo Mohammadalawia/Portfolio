@@ -2,7 +2,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import resume from '../assets/resume.pdf';
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
@@ -89,7 +89,17 @@ const Landing = ({ setSelectedPage }) => {
               Let's talk.
             </div>
           </AnchorLink>
+          <div
+          className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5">
+          <div     
+          className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair"
+          >
+          <a href={resume} download="resume.pdf"> Resume </a>  
+          </div>
+                    
+        </div>
         </motion.div>
+        
 
         <motion.div
           className="flex mt-5 justify-center md:justify-start"
@@ -105,6 +115,7 @@ const Landing = ({ setSelectedPage }) => {
           <SocialMediaIcons />
         </motion.div>
       </div>
+
     </section>
   );
 };

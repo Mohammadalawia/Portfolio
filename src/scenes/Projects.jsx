@@ -25,8 +25,6 @@ const Project = ({ title }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
         </p>
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
@@ -58,9 +56,7 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          My favorite self made projects
         </p>
       </motion.div>
 
@@ -84,7 +80,7 @@ const Projects = () => {
           <Project title="Project 2" />
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
+          <Project title="Project 3"/>
           <Project title="Project 4" />
           <Project title="Project 5" />
 
